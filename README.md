@@ -29,11 +29,13 @@ cd vue-admin-template
 
 # install dependency
 npm install
-
+OR
+yarn
 # develop
 npm run dev
 ```
-
+OR
+yarn dev
 This will automatically open http://localhost:9528
 
 ## Build
