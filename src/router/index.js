@@ -51,7 +51,7 @@ export const constantRoutes = [
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      meta: { title: '社内システム', icon: 'dashboard' }
     }]
   },
 
@@ -60,19 +60,23 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/example/table',
     name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    meta: { title: 'プロジェクト管理', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        meta: { title: '一覧', icon: 'table' }
       },
       {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        meta: { title: '詳細', icon: 'tree' }
+      },
+      {
+        path: 'http://www.ivis.co.jp',
+        meta: { title: 'Ivis', icon: 'link' }
       }
     ]
   },
